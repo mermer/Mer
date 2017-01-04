@@ -118,13 +118,16 @@ body, html {
   }
 }
 
+a {
+	text-decoration: none;
+}
+
 .header-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
-  padding-left: 3rem;
   padding-top: 2rem;
 }
 .header-wrapper .header {
@@ -143,6 +146,7 @@ body, html {
   right: 0;
   margin: 0;
   text-align: left;
+  margin-left: 3rem;
 }
 .header-wrapper .menu-wrapper:after {
   content: "";
@@ -309,11 +313,9 @@ background: -moz-linear-gradient(left,  #ededed 49%, #ffcdd3 61%, #b88be0 77%, #
 background: -webkit-linear-gradient(left,  #ededed 49%,#ffcdd3 61%,#b88be0 77%,#5727f2 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right,  #ededed 49%,#ffcdd3 61%,#b88be0 77%,#5727f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#5727f2',GradientType=1 ); /* IE6-9 */
-
-
 }
 .slider-content .slide.blue {
-  background-color: #6989E0;
+  background-color: #d1d1d1;
 }
 .slider-content .slide.green {
   background-color: #6cd779;
@@ -323,7 +325,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 }
 .slider-content .canvas {
   position: absolute;
-  left: 0;
+  left: 0px;
   top: 0;
 }
 .slider-content .fake-bg {
@@ -341,8 +343,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,ffcdd3+27,b88be0+55,5727f2+100 */
 }
 .slider-content .fake-bg.blue {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/aline-weber_copy.png);
-  background-color: #6989E0;
+/*   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/aline-weber_copy.png); */
+	background-image: url('../img/devpg-bg2.jpg');
+  background-color: #E6E6E6;
 }
 .slider-content .fake-bg.green {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/miranda-kerr.png);
@@ -443,7 +446,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  text-align: right;
+/*   text-align: right; */
   margin-top: 25rem;
   z-index: 5;
 }
@@ -712,6 +715,42 @@ use,
 
 .mask-main {
 	margin-top: 30px;
+}
+
+.brain-left {
+	position: absolute;
+	right: 0;
+}
+
+.brain-left svg {
+	float: right;
+	height: 90vh;
+	width: auto;
+	opacity: 0.1;
+}
+
+.slider-content .dev-title h1 span.mask-wrap span.mask {
+	left: 0;
+	right: auto;
+}
+
+.slider-content .dev-title h1 span.mask-wrap span.mask-web {
+	left: 101px;
+}
+
+.slider-content .dev-title .work {
+	font-size: 16px;
+	color: #000;
+	font-weight: 900;
+	text-align: left;
+	margin-left: 270px;
+  padding-top: 21px;
+  display: block;
+}
+
+.work span {
+	padding: 0 20px;
+	font-size: 14px;
 }
 
 /* ==========================================================================
