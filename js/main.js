@@ -43,7 +43,7 @@ var mySlider = {
     var w = $(mySlider.config.activeSlide).width();
     var h = $(mySlider.config.activeSlide).height();
     var img = document.createElement('IMG'); 
-    img.src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/mask-karlie.jpg";
+    img.src = "img/devpg-bg1.jpg";
     var position = {
         x: 150,
         alpha:1,
@@ -71,8 +71,12 @@ var mySlider = {
   
   drawMask : function(canvas, ctx, position,img) {
     
+/*
     var w = $(mySlider.config.activeSlide).width();
     var h = $(mySlider.config.activeSlide).height();
+*/
+		var w = 900; //make w and h the width and height of the data image.
+    var h = 1317;
     var cy = 50;
     var mStroke = 25; 
     var mWidth = 180;
@@ -87,7 +91,7 @@ var mySlider = {
     
     if (window.matchMedia("(min-width: 1200px)").matches) {
       
-      mStroke = 40; 
+      mStroke = 60; 
       cy = 120;
       mWidth = 360;
       mHeight = 460;
@@ -202,7 +206,7 @@ var mySlider = {
     
     if (window.matchMedia("(min-width: 1200px)").matches) {
         position = {
-         x: 450,
+         x: 550,
         alpha:1,
       };
       
@@ -291,7 +295,7 @@ var mySlider = {
         
       },600)
     
-      TweenMax.to(newfakeBg, 0.5, {autoAlpha: 1, delay:1});
+      TweenMax.to(newfakeBg, 0.5, {autoAlpha: 0.3, delay:1});
       TweenMax.to(img, 0.5, {autoAlpha: 1, delay:1});
       
       setTimeout(function() {
