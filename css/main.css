@@ -327,7 +327,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#9b7afb',GradientType=1 ); /* IE6-9 */
 }
 .slider-content .slide.grey {
-  background-color: #bcbcbc;
+  background-color: #a798ae;
 }
 .slider-content .canvas {
   position: absolute;
@@ -359,7 +359,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 }
 */
 .slider-content .fake-bg.grey {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/kate-moss.png);
+  background-image: url('../img/mer-1.png');
   background-color: #bcbcbc;
 }
 .slider-content .image-mask {
@@ -624,6 +624,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
   height: 100%;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  padding-top: 2.3rem;
 }
 .footer-wrapper li:last-child {
   border: none;
@@ -823,6 +824,20 @@ use,
   margin-top: 10%;
   opacity: 0.15;
 }
+
+/* web dev page styles */
+
+#webdev {
+	background-color: #E6E6E6;
+}
+
+#webdev h1 {
+	font-weight: 900;
+	margin-top: 8rem;
+}
+
+
+
 
 /* ==========================================================================
    Helper classes
