@@ -272,6 +272,7 @@ a {
   min-width: 480px;
   background: #fff;
   margin: 0 auto;
+  overflow-y: hidden;
 }
 .slider-content .slider-container {
   position: relative;
@@ -318,7 +319,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
   background-color: #d1d1d1;
 }
 .slider-content .slide.green {
-  background-color: #6cd779;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f5f5+0,ffe2e5+21,d2b5ef+49,9b7afb+100 */
+	background: #f5f5f5; /* Old browsers */
+	background: -moz-linear-gradient(left,  #f5f5f5 0%, #ffe2e5 21%, #d2b5ef 49%, #9b7afb 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #f5f5f5 0%,#ffe2e5 21%,#d2b5ef 49%,#9b7afb 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #f5f5f5 0%,#ffe2e5 21%,#d2b5ef 49%,#9b7afb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#9b7afb',GradientType=1 ); /* IE6-9 */
 }
 .slider-content .slide.grey {
   background-color: #bcbcbc;
@@ -347,10 +353,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 	background-image: url('../img/devpg-bg2.jpg');
   background-color: #E6E6E6;
 }
+/*
 .slider-content .fake-bg.green {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/miranda-kerr.png);
-  background-color: #6cd779;
+	background: #ededed;
 }
+*/
 .slider-content .fake-bg.grey {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/kate-moss.png);
   background-color: #bcbcbc;
@@ -751,6 +758,70 @@ use,
 .work span {
 	padding: 0 20px;
 	font-size: 14px;
+}
+
+.slide-design .canvas {
+	display: none;
+}
+
+.d-box1 {
+	background-color: rgba(245, 109, 142, 0.4);
+	width: 400px;
+	height: 500px;
+	position: absolute;
+	left: 44%;
+	top: 12%;
+}
+.d-box2 {
+	background-color: rgba(242, 79, 156, 0.4);
+	position: absolute;
+	height: 75px;
+	width: 275px;
+	top: 16%;
+	left: 34%;
+}
+.d-box3 {
+	background-color: rgba(255, 255, 255, 0.2);
+	position: absolute;
+	height: 197px;
+	width: 206px;
+	top: 62%;
+  right: 18%;
+}
+
+.slider-content .title-wrapper h1 span.mask-wrap span.mask-digital {
+	font-size: 72px;
+	right: 10px;
+}
+
+.slider-content .title-dd h1 span.mask-wrap {
+	height: 10rem;
+}
+
+.slider-content .title-dd span.gallery {
+	position: absolute;
+	text-align: right;
+	margin-right: 5rem;
+	top: 129%;
+	left: 44%;
+	font-size: 14px;
+}
+
+.slider-content .title-bg-dd span.mask-wrap span.mask {
+	clip: rect(0rem, 120rem, 32rem, 0px);
+}
+
+.slider-content .make-digital {
+	right: 14px;
+}
+
+.brain-right {
+	position: absolute;
+}
+.brain-right svg {
+  height: 90vh;
+  margin-top: 10%;
+  opacity: 0.15;
 }
 
 /* ==========================================================================
