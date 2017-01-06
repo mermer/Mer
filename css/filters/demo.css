@@ -200,8 +200,7 @@ a:hover, a:focus {
 /* Content */
 .content {
 	padding: 0 0 4em;
-	height: 800px;
-	min-height: 100vh;
+	min-height: 80vh;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;

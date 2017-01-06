@@ -245,14 +245,14 @@
 }
 
 .tilter--8 .tilter__deco--lines {
-	stroke: #9255ae;
+	stroke: #fff;
 	stroke-width: 6px;
-	mix-blend-mode: color-burn;
+/* 	mix-blend-mode: color-burn; */
 }
 
 .tilter--8 .tilter__caption {
-	color: #9255ae;
-	mix-blend-mode: color-burn;
+	color: #fff;
+/* 	mix-blend-mode: color-burn; */
 }
 
 .tilter--8 .tilter__figure::before {
