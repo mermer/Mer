@@ -454,7 +454,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
   margin-right: auto;
   width: 50%;
 /*   text-align: right; */
-  margin-top: 25rem;
+  margin-top: 12%;
   z-index: 5;
 }
 .slider-content .title-wrapper h1 {
@@ -673,11 +673,12 @@ use,
 
 .brain-full svg {
 	position: absolute;
-  width: 41%;
+  width: auto;
   left: 50%;
   transform: translate(-50%, 0);
-  top: -85px;
+  top: 5%;
   opacity: .1;
+  height: 78vh;
 }
 
 .home-devbg {
@@ -768,7 +769,7 @@ use,
 .d-box1 {
 	background-color: rgba(245, 109, 142, 0.4);
 	width: 400px;
-	height: 500px;
+	height: 455px;
 	position: absolute;
 	left: 44%;
 	top: 12%;
@@ -783,11 +784,11 @@ use,
 }
 .d-box3 {
 	background-color: rgba(255, 255, 255, 0.2);
-	position: absolute;
-	height: 197px;
-	width: 206px;
-	top: 62%;
-  right: 18%;
+  position: absolute;
+  height: 157px;
+  width: 166px;
+  top: 62%;
+  right: 19%;
 }
 
 .slider-content .title-wrapper h1 span.mask-wrap span.mask-digital {
@@ -823,6 +824,7 @@ use,
   height: 90vh;
   margin-top: 10%;
   opacity: 0.15;
+  margin-left: -16%;
 }
 
 /* web dev page styles */
