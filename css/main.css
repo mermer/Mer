@@ -995,7 +995,7 @@ use,
 	background-color: #fafafa;
 }
 
-.nmhubs-nyfw-row {
+.nmhubs-nyfw-row, .nmhubs-holiday-row {
 	position: relative;
 }
 
@@ -1063,6 +1063,80 @@ p {
 
 .nmhubs-nyfw-head a:hover {
 	text-decoration: underline;
+}
+
+.nmhub2-line-1 {
+	position: absolute;
+  top: 9.5%;
+  z-index: 1;
+  left: 46%;
+}
+
+.nmhub2-line-2 {
+	position: absolute;
+  top: 15%;
+  z-index: 1;
+  left: 46%;
+}
+
+.nmhub2-line-3 {
+  position: absolute;
+  top: 24%;
+  z-index: 1;
+  left: 46.5%;
+}
+
+.nmhub2-line-4 {
+	position: absolute;
+  top: 33.5%;
+  z-index: 1;
+  left: 46.5%;
+}
+
+.nmhub2-line-5 {
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  left: 46.5%;
+}
+
+.nmhub2-line-6 {
+  position: absolute;
+  top: 57%;
+  z-index: 1;
+  left: 46.5%;
+}
+
+.nmhub2-line-7 {
+	position: absolute;
+  top: 64%;
+  z-index: 1;
+  left: 46.5%;
+}
+
+.nmhub2-line-8 {
+	position: absolute;
+  top: 72%;
+  z-index: 1;
+  left: 46.5%;
+}
+
+.nmhub2-line-9 {
+	position: absolute;
+  top: 82.5%;
+  z-index: 1;
+  left: 46.5%;
+}
+
+.nmhub2-line-10 {
+	position: absolute;
+  top: 90%;
+  z-index: 1;
+  left: 46.5%;
+}
+
+.nmhubs-holiday-row {
+	margin-top: 200px;
 }
 
 /* ==========================================================================
