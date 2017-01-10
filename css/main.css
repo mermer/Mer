@@ -122,6 +122,11 @@ a {
 	text-decoration: none;
 }
 
+a:hover, a:focus, a:active {
+	cursor: pointer;
+	text-decoration: none;
+}
+
 .header-wrapper {
   position: absolute;
   top: 0;
@@ -839,6 +844,11 @@ use,
 	margin-bottom: 8rem;
 }
 
+.back {
+	font-weight: 900;
+	color: #fff;
+}
+
 /* design page styles */
 
 #design {
@@ -866,6 +876,194 @@ use,
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66d089cb', endColorstr='#99405bd5',GradientType=0 ); /* IE6-9 */
 }
 
+/* SUGAR BLISS PAGE STYLES */
+
+#sugarbliss {
+	background-color: #FFE5E7;
+	color: #562a0d;
+}
+
+.sb-header {
+	background-image: url("../img/sugarbliss/sbp_header.jpg");
+	background-size: 100% auto;
+}
+
+.sbp-logo {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.sb-intro-cont {
+	background-image: url("../img/sugarbliss/background-round.svg");
+	background-size: 100% auto;
+	text-align: center;
+	background-position-y: bottom;
+	background-repeat: no-repeat;a
+}
+
+#sugarbliss a {
+	color: #562a0d;
+	font-weight: 900;
+}
+
+.line {
+	width: 120px;
+	border-bottom: solid 3px #562a0d;
+	display: block;
+	margin: auto;
+}
+
+.sb-font {
+	font-family: 'Sacramento', cursive;
+}
+
+.sbp-resp-cont {
+	background-color: #fff;
+}
+
+.spb-product-row, .spb-order-row, .spb-home-row {
+	margin-top: 40px;
+}
+
+.spb-product-row h1, .spb-order-row h1, .spb-home-row h1 {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+@media all and (max-width: 767px) {
+	.spb-product-row img {
+		margin-bottom: 40px;
+	}
+}
+
+/* bundles page */
+.bundles-intro-row {
+	padding-top: 40px;
+}
+
+.backtoindex-cont svg {
+	display: inline-block;
+	padding-bottom: 7px;
+}
+
+.backtoindex-cont h3 {
+	display: inline-block;
+}
+
+/* pure harmony page */
+
+.ph-intro-row a {
+	color: #552801;
+	font-weight: 900;
+}
+
+.ph-line {
+	color: #552801;
+}
+
+/* ultra page */
+
+.ultra-row {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#ultra h2 {
+	padding-bottom: 20px;
+}
+
+#ultra {
+	background-color: #fafafa;
+}
+
+.amp {
+	font-weight: 300;
+	font-size: 25px;
+}
+
+.nm-hubs-row {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+#nmhubs {
+	background-color: #fafafa;
+}
+
+.nmhubs-nyfw-row {
+	position: relative;
+}
+
+.nmhub-line-1 {
+  position: absolute;
+  top: 17%;
+  z-index: 1;
+  left: 44%;
+}
+
+p {
+	font-size: 16px;
+}
+
+.nmhub-line-2 {
+	position: absolute;
+	top: 26%;
+  z-index: 1;
+  left: 46%;
+}
+
+.nmhub-line-3 {
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  left: 46.5%;
+}
+
+.nmhub-line-4 {
+  position: absolute;
+  top: 53%;
+  z-index: 1;
+  left: 46.5%;
+}
+
+.nmhub-line-5 {
+  position: absolute;
+  top: 64%;
+  z-index: 1;
+  left: 46.5%;
+}
+
+.nmhub-line-6 {
+  position: absolute;
+  top: 78%;
+  z-index: 1;
+  left: 46.5%;
+}
+
+.nmhub-line-7 {
+  position: absolute;
+  top: 90%;
+  z-index: 1;
+  left: 46.5%;
+}
+
+.nmhubs-nyfw-head .line {
+	margin-bottom: 20px;
+	border-color: #000;
+}
+
+.nmhubs-nyfw-head a {
+	color: #000;
+}
+
+.nmhubs-nyfw-head a:hover {
+	text-decoration: underline;
+}
 
 /* ==========================================================================
    Helper classes
