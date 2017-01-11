@@ -1173,6 +1173,38 @@ box-shadow: 2px 2px 19px -2px rgba(0,0,0,0.24);
 	text-decoration: underline;
 }
 
+.nmblog-intro-row {
+	padding-top: 35px;
+}
+
+.nmblog-intro-row a {
+	color: #000;
+	font-weight: 900;
+}
+
+.nmblog-intro-row .line {
+	border-color: #000;
+}
+
+.nmblog-row {
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.nmblog-row h2 {
+	padding-bottom: 30px;
+}
+
+#nmblog {
+	background-color: #fafafa;
+}
+
+@media all and (max-width: 767px) {
+	.nmblog-cat {
+		margin-bottom: 40px;
+	}
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
