@@ -986,9 +986,16 @@ use,
 	font-size: 25px;
 }
 
+
 .nm-hubs-row {
-	margin-top: 100px;
+	margin-top: 50px;
 	margin-bottom: 50px;
+}
+@media all and (min-width: 768px) {
+	.nm-hubs-row {
+		margin-top: 100px;
+		margin-bottom: 50px;
+	}
 }
 
 #nmhubs {
@@ -1135,8 +1142,10 @@ p {
   left: 46.5%;
 }
 
-.nmhubs-holiday-row {
-	margin-top: 200px;
+@media all and (min-width: 768px) {
+	.nmhubs-holiday-row {
+		margin-top: 200px;
+	}
 }
 
 .bundles-ads-row img {
@@ -1148,6 +1157,20 @@ box-shadow: 2px 2px 19px -2px rgba(0,0,0,0.24);
 .bundles-ads-row-cont {
 	margin-bottom: 30px;
 	margin-top: 30px;
+}
+
+#nmhubs .visible-xs {
+	margin-bottom: 35px;
+}
+
+.nmhubs-introrow {
+	padding-top: 40px;
+}
+
+.nmhubs-introrow a {
+	color: #000;
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 /* ==========================================================================
