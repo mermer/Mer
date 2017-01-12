@@ -1205,6 +1205,65 @@ box-shadow: 2px 2px 19px -2px rgba(0,0,0,0.24);
 	}
 }
 
+.urbandecay-intro-row {
+	padding-top: 30px;
+}
+
+.ud-row {
+	margin-top: 100px;
+}
+
+.ud-proj-intro {
+	padding-bottom: 35px;
+}
+
+.ud-row img {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.ud-proj-intro a {
+	color: #42146e;
+	font-weight: 900;
+}
+
+.ud-proj-intro .line {
+	border-color: #42146e;
+}
+
+.ph-header {
+	background-image: url("../img/pureharmony/Pure_Harmony_header.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.ph-logo {
+	padding-top: 15%;
+	padding-bottom: 15%;
+}
+
+.ph-row {
+	margin-top: 40px;
+}
+
+.ph-row h2 {
+	padding-bottom: 15px;
+}
+
+.ph-row img {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#suitstables {
+	background-color: #fafafa;
+}
+
+h4 {
+	line-height: 22px;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
