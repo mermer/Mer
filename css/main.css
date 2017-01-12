@@ -1263,6 +1263,32 @@ h4 {
 	line-height: 22px;
 }
 
+.icons-intro-row {
+	padding-top: 30px;
+}
+
+.icons-intro-row a {
+		color: #383838;
+		font-weight: 600;
+}
+
+.icons-intro-row a:hover {
+	text-decoration: underline;
+}
+
+.spb-order-row {
+	padding-top: 30px;
+	padding-bottom: 35px;
+}
+
+.back-portpages {
+	position: absolute;
+	z-index: 3;
+}
+
+#bundles .back, #pureharmony .back, #sallybeauty .back, #angularicons .back {
+	color: #000;
+}
 
 /* ==========================================================================
    Helper classes
