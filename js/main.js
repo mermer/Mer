@@ -1,8 +1,4 @@
-/*
-You can check out original dribble shot here https://dribbble.com/shots/2375246-Fashion-Butique-slider-animation
 
-Comments or suggestions are always appreciate it. 
-*/
 
 
 
@@ -261,6 +257,11 @@ var mySlider = {
       var activeSlideContent = active.find('.slide-content'); 
       var activefakeBg = active.find('.fake-bg');
       var activeImageCaption = active.find('.image-caption');
+      var activeBrain = active.find('.brain');
+      var activeHomeBox = active.find('.home-box');
+      var activeWork = active.find('.work');
+      var activeDesignBoxes = active.find('.design-boxes');
+      var activeAboutP = active.find('.about-p');
 
       var newTitleBg = newSlide.find('.title-background .mask-wrap');
       var newTitle = newSlide.find('.title-wrapper h1 .mask-wrap');
@@ -268,15 +269,32 @@ var mySlider = {
       var newfakeBg = newSlide.find('.fake-bg');
       var nextImageCaption = newSlide.find('.image-caption');
       var img = $('<img />')
+      var newBrain = newSlide.find('.brain');
+      var newHomeBox = newSlide.find('.home-box');
+      var newWork = newSlide.find('.work');
+      var newDesignBoxes = newSlide.find('.design-boxes');
+      var newAboutP = newSlide.find('.about-p');
       
       newSlide.addClass('next');
       
       activeMainTitle.addClass('mask-up')
       activeTitleBg.addClass('mask-down')
       activeImageCaption.addClass('mask-up');
+      activeBrain.addClass('fadein');
+      activeHomeBox.addClass('toleft');
+      activeWork.addClass('work-toleft');
+      activeDesignBoxes.addClass('boxes-out');
+      activeAboutP.addClass('fadein');
+      
       newTitle.addClass('mask-down');
       newTitleBg.addClass('mask-up');
       nextImageCaption.addClass('mask-down');
+      newBrain.addClass('fadeout');
+      newHomeBox.addClass('fromright');
+      newWork.addClass('fadein-from-right');
+      newDesignBoxes.addClass('boxes-in');
+      newAboutP.addClass('fadeout');
+      
       
       
       TweenMax.set(activeSlideContent, {width:w});
@@ -301,11 +319,19 @@ var mySlider = {
       setTimeout(function() {
         newTitle.removeClass('mask-down');
         newTitleBg.removeClass('mask-up');
-        
+        newBrain.removeClass('fadeout');
+        newBrain.removeClass('fadein');
+        newHomeBox.removeClass('fromright');
+        newHomeBox.removeClass('toleft');
+        newWork.removeClass('fadein-from-right');
+        newWork.removeClass('work-toleft');
+        newDesignBoxes.removeClass('boxes-out');
+//         newDesignBoxes.removeClass('boxes-in');
+				newAboutP.removeClass('fadeout');
+        newAboutP.removeClass('fadein');
       },800);
       
-    
-      
+        
       setTimeout(function() {
          active.removeClass('active');
          newSlide.addClass('active').removeClass('next');
@@ -314,6 +340,11 @@ var mySlider = {
          activeTitleBg.removeClass('mask-down');
         activeImageCaption.removeClass('mask-up');
         nextImageCaption.removeClass('mask-down');
+        activeHomeBox.removeClass('fromright');
+        activeHomeBox.removeClass('toleft');
+//         activeWork.removeClass('work-toleft');
+				activeDesignBoxes.removeClass('boxes-in');
+				activeDesignBoxes.removeClass('boxes-out');
 
       },1500)
   }
