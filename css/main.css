@@ -274,7 +274,7 @@ a:hover, a:focus, a:active {
 .slider-content {
   position: relative;
 /*   max-width: 112rem; */
-  min-width: 480px;
+/*   min-width: 480px; */
   background: #fff;
   margin: 0 auto;
   overflow-y: hidden;
@@ -1484,22 +1484,6 @@ h4 {
 	display: none;
 }
 
-/*
-
-.brain span.mask {
-	transition: all 0.3s ease-in;
-	transition-delay: 0.15s;
-}
-
-.slider-content .brain.fadeout span.mask {
-	opacity: 1;
-}
-
-.slider-content .brain.fadein span.mask {
-	opacity: 0;
-}
-*/
-
 .about-p span.mask {
 	transition: all 0.3s ease-in;
 	transition-delay: 0.15s;
@@ -1512,6 +1496,36 @@ h4 {
 .slider-content .about-p.fadein span.mask {
 	opacity: 0;
 }
+
+@media all and (min-width: 768px) {
+	.mobile-home {
+		display: none;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.content-large {
+		display: none;
+	}
+}
+
+.m-intro {
+	background: #ededed;
+  background: -moz-linear-gradient(left, #ededed 49%, #ffcdd3 61%, #b88be0 77%, #5727f2 100%);
+  background: -webkit-linear-gradient(left, #ededed 49%,#ffcdd3 61%,#b88be0 77%,#5727f2 100%);
+  background: linear-gradient(to right, #ededed 49%,#ffcdd3 61%,#b88be0 77%,#5727f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#5727f2',GradientType=1 );
+}
+
+.intro-bgimage {
+	background-image: url("img/devbg.jpg");
+}
+
+.m-brain-full {
+	width: 100%;
+}
+
+
 
 /* ==========================================================================
    Helper classes
