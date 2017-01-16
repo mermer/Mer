@@ -338,7 +338,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 .slider-content .canvas {
   position: absolute;
   left: 0px;
-  top: -70px;
+  top: 240px;
+}
+@media all and (min-width: 992px) {
+	.slider-content .canvas {
+	  top: -40px;
+	}
+}
+@media all and (min-width: 1200px) {
+	.slider-content .canvas {
+	  top: -70px;
+	}
 }
 .slider-content .fake-bg {
   position: absolute;
@@ -463,9 +473,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
   margin-top: 45%;
   z-index: 5;
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 992px) {
 	.slider-content .title-wrapper {
 		margin-top: 12%;
+	}
+}
+
+.slider-content .dev-title {
+	width: 90%;
+}
+@media all and (min-width: 1200px) {
+	.slider-content .dev-title {
+		width: 50%;
 	}
 }
 
@@ -483,12 +502,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
   height: 12rem;
   position: relative;
 }
+
+.slider-content .dev-title h1 span.mask-wrap {
+	  display: block;
+	  height: 18rem;
+	  position: relative;
+	}
+@media all and (min-width: 1200px) {
+	.slider-content .dev-title h1 span.mask-wrap {
+	  display: block;
+	  height: 12rem;
+	  position: relative;
+	}
+}
 .slider-content .title-wrapper h1 span.mask-wrap span.mask {
   position: absolute;
   top: 0;
   right: 0;
-  clip: rect(0rem, 48rem, 12rem, 0px);
+  clip: rect(0rem, 88rem, 12rem, 0px);
   transition: all 0.3s ease-in;
+}
+@media all and (min-width: 1200px) {
+	.slider-content .title-wrapper h1 span.mask-wrap span.mask { 
+		clip: rect(0rem, 48rem, 12rem, 0px);
+	}	
 }
 .slider-content .title-wrapper h1 span.mask-wrap:last-child span.mask {
   transition-delay: 0.15s;
@@ -529,7 +566,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
   width: 1px;
   height: 2.5rem;
   background: white;
-  top: -0.5rem;
+  top: 0px;
   opacity: 0.9;
 }
 .slider-content .title-dd .work span.mask::after {
@@ -540,8 +577,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
   width: 1px;
   height: 2.5rem;
   background: white;
-  top: -0.5rem;
+  top: 0px;
   opacity: 0.9;
+}
+
+@media all and (min-width: 1200px) {
+	.slider-content .title-dd .work span.mask::after {
+		top: -0.5rem;
+	}
+	.slider-content .title-dd .work span.mask::before {
+		top: -0.5rem;
+	}
 }
 
 .control-nav {
@@ -624,9 +670,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
   color: white;
   bottom: 0rem;
   right: 0rem;
-  width: 60%;
+  width: 90%;
   height: 6rem;
   z-index: 999;
+}
+@media all and (min-width: 1200px) {
+	.footer-wrapper {
+	  width: 60%;
+	}
 }
 .footer-wrapper ul {
   list-style: none;
@@ -651,7 +702,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
   height: 100%;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  padding-top: 2.3rem;
+  padding-top: 1.3rem;
+  font-size: 17px;
+}
+@media all and (min-width: 1200px) {
+	.footer-wrapper li {
+		font-size: 12px;
+		padding-top: 2.3rem;
+	}	
 }
 .footer-wrapper li:last-child {
   border: none;
@@ -822,7 +880,22 @@ use,
 }
 
 .slider-content .dev-title h1 span.mask-wrap span.mask-web {
-	left: 101px;
+	left: 19%;
+	font-size: 94px;
+}
+.slider-content .dev-title h1 span.mask-wrap span.mask-dev {
+	left: 41%;
+	font-size: 94px;
+}
+@media all and (min-width: 1200px) {
+	.slider-content .dev-title h1 span.mask-wrap span.mask-web {
+		left: 101px;
+		font-size: 12rem;
+	}
+	.slider-content .dev-title h1 span.mask-wrap span.mask-dev {
+		left: 0px;
+		font-size: 12rem;
+	}
 }
 
 .slider-content .dev-title .work {
@@ -830,9 +903,14 @@ use,
 	color: #000;
 	font-weight: 900;
 	text-align: left;
-	margin-left: 270px;
+	margin-left: 50%;
   padding-top: 21px;
   display: block;
+}
+@media all and (min-width: 1200px) {
+	.slider-content .dev-title .work {
+		margin-left: 270px;
+	}
 }
 
 .work span {
@@ -855,6 +933,16 @@ use,
 	opacity: 0;
 }
 */
+
+@media all and (max-width: 991px) {
+	.slider-content .about .title-wrapper h1 span.mask-wrap span.mask {
+		left: 0;
+		right: auto;
+	}
+	.slider-content .about .title-wrapper h1 {
+		margin-left: 0px;
+	}
+}
 
 
 .work span.mask {
@@ -924,15 +1012,41 @@ use,
 .slider-content .design-boxes.boxes-in span.mask .d-box1 {
 	transition: all 1s ease-in;
 	transition-delay: 0.8s;
-	left: 44%;
+	left: 30%;
 	opacity: 1;
+	top: 24%;
+}
+@media all and (min-width: 992px) {
+	.slider-content .design-boxes.boxes-in span.mask .d-box1 {
+		left: 38%;
+		top: 4%;
+	}
+}
+@media all and (min-width: 1200px) {
+	.slider-content .design-boxes.boxes-in span.mask .d-box1 {
+		left: 44%;
+		top: 12%;
+	}
 }
 
 .slider-content .design-boxes.boxes-in span.mask .d-box2 {
 	transition: all 1s ease-in;
 	transition-delay: 0.8s;
-	left: 34%;
+	left: 6%;
 	opacity: 1;
+	top: 26%
+}
+@media all and (min-width: 992px) {
+	.slider-content .design-boxes.boxes-in span.mask .d-box2 {
+		left: 22%;
+		top: 7%;
+	}
+}
+@media all and (min-width: 1200px) {
+	.slider-content .design-boxes.boxes-in span.mask .d-box2 {
+		left: 34%;
+		top: 16%;
+	}
 }
 
 .slider-content .design-boxes.boxes-out span.mask .d-box3, .slider-content .design-boxes.boxes-out span.mask .d-box2, .slider-content .design-boxes.boxes-out span.mask .d-box1 {
@@ -974,8 +1088,20 @@ use,
 }
 
 .slider-content .title-wrapper h1 span.mask-wrap span.mask-digital {
-	font-size: 72px;
+	font-size: 62px;
 	right: 10px;
+}
+.slider-content .title-wrapper h1 span.mask-wrap span.mask-design {
+		font-size: 92px;
+	}
+@media all and (min-width: 1200px) {
+	.slider-content .title-wrapper h1 span.mask-wrap span.mask-digital {
+		font-size: 72px;
+		right: 10px;
+	}
+	.slider-content .title-wrapper h1 span.mask-wrap span.mask-design {
+		font-size: 12rem;
+	}
 }
 
 .slider-content .title-dd h1 span.mask-wrap {
@@ -986,9 +1112,14 @@ use,
 	position: absolute;
 	text-align: right;
 	margin-right: 5rem;
-	top: 129%;
+	top: 159%;
 	left: 44%;
 	font-size: 14px;
+}
+@media all and (min-width: 1200px) {
+	.slider-content .title-dd span.work {
+		top: 129%;
+	}
 }
 
 .slider-content .title-bg-dd span.mask-wrap span.mask {
@@ -1476,6 +1607,17 @@ h4 {
 	position: absolute;
 	bottom: -45%;
 	color: #fff;
+}
+@media all and (max-width: 991px) {
+	.resume-a {
+		top: 202%;
+	}
+}
+
+@media all and (max-width: 1199px) {
+	.resume-a {
+		top: 165%;
+	}
 }
 
 .resume-a .mask {
