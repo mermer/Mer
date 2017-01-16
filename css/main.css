@@ -460,9 +460,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
   margin-right: auto;
   width: 50%;
 /*   text-align: right; */
-  margin-top: 12%;
+  margin-top: 45%;
   z-index: 5;
 }
+@media all and (min-width: 1200px) {
+	.slider-content .title-wrapper {
+		margin-top: 12%;
+	}
+}
+
 .slider-content .title-wrapper h1 {
   font-size: 12rem;
   margin: 0;
