@@ -1516,7 +1516,7 @@ h4 {
   background: linear-gradient(to right, #ededed 49%,#ffcdd3 61%,#b88be0 77%,#5727f2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#5727f2',GradientType=1 );
   text-align: center;
-  height: 100vh;
+  height: 95vh;
   position: relative;
 }
 
@@ -1595,6 +1595,7 @@ h4 {
 .mobile-dev-title {
 	padding-top: 55px;
 	padding-bottom: 55px;
+	position: relative;
 }
 
 .mobile-dev h3 {
@@ -1740,6 +1741,50 @@ h4 {
 	font-size: 12px;
 	color: #fff;
 	padding-left: 10%;
+}
+
+@media all and (max-width: 767px) {
+	#webdev .back-portpages, #design .back-portpages {
+		position: relative;
+	}
+	#webdev .portlist-h1, #design .portlist-h1 {
+		margin-top: 20px;
+	}
+	.back-portpages h3 {
+		font-size: 17px;
+	}
+	.back-portpages svg {
+		font-size: 31px;
+	}
+	#webdev .col-sm-4, #design .col-sm-4 {
+		margin-top: 50px;
+    margin-bottom: 100px;
+	}
+	#webdev .tilter--6 .tilter__caption {
+		padding: 0 15em 15.5em 4em;
+	}
+	#webdev .tilter__title {
+		font-size: 28px;
+	}
+	#design .smooth .row .tilter:nth-child(1) {
+		margin-bottom: 30px;
+	}
+	#design .tilter__title {
+		font-size: 28px;
+	}
+	#design .tilter__caption {
+		padding-left: 45px;
+    padding-bottom: 35px;
+	}
+	.sb-intro-cont {
+		padding-bottom: 40px;
+	}
+	.sb-intro-text {
+		background-color: #fff;
+	}
+	.sb-intro-text h4 {
+		margin-top: 0px;
+	}
 }
 
 /* ==========================================================================
