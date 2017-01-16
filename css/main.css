@@ -365,7 +365,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,ffcdd3+27,b88be0+55,5727f2+100 */
 }
 .slider-content .fake-bg.blue {
-/*   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/aline-weber_copy.png); */
 	background-image: url('../img/devpg-bg2.jpg');
   background-color: #E6E6E6;
 }
@@ -547,6 +546,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 }
 
 .slider-content .brain.fadein span.mask {
+	opacity: 0;
+}
+
+.home-devbg {
+	transition: all 0.3s ease-in;
+	transition-delay: 0.15s;
+}
+
+.slider-content .home-devbg.devbgfadeout span.mask {
+	opacity: 1;
+}
+
+.slider-content .home-devbg.devbgfadein span.mask {
 	opacity: 0;
 }
 

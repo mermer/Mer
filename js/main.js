@@ -262,6 +262,7 @@ var mySlider = {
       var activeWork = active.find('.work');
       var activeDesignBoxes = active.find('.design-boxes');
       var activeAboutP = active.find('.about-p');
+      var activeDevBG = active.find('.home-devbg');
 
       var newTitleBg = newSlide.find('.title-background .mask-wrap');
       var newTitle = newSlide.find('.title-wrapper h1 .mask-wrap');
@@ -274,6 +275,7 @@ var mySlider = {
       var newWork = newSlide.find('.work');
       var newDesignBoxes = newSlide.find('.design-boxes');
       var newAboutP = newSlide.find('.about-p');
+      var newDevBG = newSlide.find('.home-devbg');
       
       newSlide.addClass('next');
       
@@ -285,6 +287,7 @@ var mySlider = {
       activeWork.addClass('work-toleft');
       activeDesignBoxes.addClass('boxes-out');
       activeAboutP.addClass('fadein');
+      activeDevBG.addClass('devbgfadein');
       
       newTitle.addClass('mask-down');
       newTitleBg.addClass('mask-up');
@@ -294,7 +297,7 @@ var mySlider = {
       newWork.addClass('fadein-from-right');
       newDesignBoxes.addClass('boxes-in');
       newAboutP.addClass('fadeout');
-      
+      newDevBG.addClass('devbgfadeout');
       
       
       TweenMax.set(activeSlideContent, {width:w});
@@ -329,6 +332,8 @@ var mySlider = {
 //         newDesignBoxes.removeClass('boxes-in');
 				newAboutP.removeClass('fadeout');
         newAboutP.removeClass('fadein');
+        newDevBG.removeClass('devbgfadeout');
+        newDevBG.removeClass('devbgfadein');
       },800);
       
         
