@@ -463,18 +463,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
   clip: rect(25rem, 44rem, 25rem, 0px);
 }
 .slider-content .title-wrapper {
-  position: relative;
+  position: absolute;
   color: white;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 /*   text-align: right; */
-  margin-top: 45%;
+/*   margin-top: 45%; */
   z-index: 5;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform :translate(0, -69%);
 }
 @media all and (min-width: 992px) {
 	.slider-content .title-wrapper {
-		margin-top: 12%;
+/* 		margin-top: 12%; */
 	}
 }
 
@@ -827,10 +831,12 @@ use,
 	animation-name: toleft;
 	animation-duration: 1s;
 */
-	transform: translate3d(-150%, 0px, 0px);
+/* 	transform: translate3d(-150%, 0px, 0px); */
+	left: -170%;
 	opacity:0;
 }
 
+/*
 @keyframes toleft {
 	0% {
 		transform: translate3d(0px, 0px, 0px);
@@ -847,6 +853,7 @@ use,
 		border: none;
 	}
 }
+*/
 
 .slider-content .home-title-wrapper h1 {
 	font-size: 8rem;
