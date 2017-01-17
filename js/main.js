@@ -1,4 +1,8 @@
+/*
+You can check out original dribble shot here https://dribbble.com/shots/2375246-Fashion-Butique-slider-animation
 
+Comments or suggestions are always appreciate it. 
+*/
 
 
 
@@ -39,7 +43,7 @@ var mySlider = {
     var w = $(mySlider.config.activeSlide).width();
     var h = $(mySlider.config.activeSlide).height();
     var img = document.createElement('IMG'); 
-    img.src = "img/devpg-bg1.jpg";
+    img.src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/mask-karlie.jpg";
     var position = {
         x: 150,
         alpha:1,
@@ -67,12 +71,8 @@ var mySlider = {
   
   drawMask : function(canvas, ctx, position,img) {
     
-/*
     var w = $(mySlider.config.activeSlide).width();
     var h = $(mySlider.config.activeSlide).height();
-*/
-		var w = 900; //make w and h the width and height of the data image.
-    var h = 1317;
     var cy = 50;
     var mStroke = 25; 
     var mWidth = 180;
@@ -87,7 +87,7 @@ var mySlider = {
     
     if (window.matchMedia("(min-width: 1200px)").matches) {
       
-      mStroke = 60; 
+      mStroke = 40; 
       cy = 120;
       mWidth = 360;
       mHeight = 460;
@@ -202,7 +202,7 @@ var mySlider = {
     
     if (window.matchMedia("(min-width: 1200px)").matches) {
         position = {
-         x: 550,
+         x: 450,
         alpha:1,
       };
       
@@ -248,7 +248,7 @@ var mySlider = {
     
   },
   
-  animateSlide : function(active, newSlide) {
+ animateSlide : function(active, newSlide) {
       
       var w = $(mySlider.config.slider).width();
       var backgroundImg = $(mySlider.config.bgPicture);
@@ -355,6 +355,7 @@ var mySlider = {
   }
   
 }
+
 
 function debounce(func, wait, immediate) {
 	var timeout;
