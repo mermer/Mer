@@ -1643,9 +1643,11 @@ h4 {
 	border-bottom: solid 1px #fff;
 }
 
+/*
 .about .title-wrapper {
 	margin-top: 8%;
 }
+*/
 
 .about canvas {
 	display: none;
