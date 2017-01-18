@@ -248,7 +248,7 @@ var mySlider = {
     
   },
   
- animateSlide : function(active, newSlide) {
+  animateSlide : function(active, newSlide) {
       
       var w = $(mySlider.config.slider).width();
       var backgroundImg = $(mySlider.config.bgPicture);
@@ -257,6 +257,7 @@ var mySlider = {
       var activeSlideContent = active.find('.slide-content'); 
       var activefakeBg = active.find('.fake-bg');
       var activeImageCaption = active.find('.image-caption');
+//       custom
       var activeBrain = active.find('.brain');
       var activeHomeBox = active.find('.home-box');
       var activeWork = active.find('.work');
@@ -270,6 +271,7 @@ var mySlider = {
       var newfakeBg = newSlide.find('.fake-bg');
       var nextImageCaption = newSlide.find('.image-caption');
       var img = $('<img />')
+//       custom
       var newBrain = newSlide.find('.brain');
       var newHomeBox = newSlide.find('.home-box');
       var newWork = newSlide.find('.work');
@@ -282,6 +284,11 @@ var mySlider = {
       activeMainTitle.addClass('mask-up')
       activeTitleBg.addClass('mask-down')
       activeImageCaption.addClass('mask-up');
+      newTitle.addClass('mask-down');
+      newTitleBg.addClass('mask-up');
+      nextImageCaption.addClass('mask-down');
+      
+//       custom
       activeBrain.addClass('fadein');
       activeHomeBox.addClass('toleft');
       activeWork.addClass('work-toleft');
@@ -307,6 +314,7 @@ var mySlider = {
       TweenMax.to(active, 0.8, {width:'0%', ease: Power4.easeIn});
       TweenMax.to(activefakeBg, 0.3, {autoAlpha: 0, delay:0.4});
       TweenMax.to(backgroundImg, 0.3, {autoAlpha: 0, delay:0.4});
+      
     
       setTimeout(function() {
         backgroundImg.remove();
@@ -316,46 +324,41 @@ var mySlider = {
         
       },600)
     
-      TweenMax.to(newfakeBg, 0.5, {autoAlpha: 0.3, delay:1});
+      TweenMax.to(newfakeBg, 0.5, {autoAlpha: 1, delay:1});
       TweenMax.to(img, 0.5, {autoAlpha: 1, delay:1});
       
       setTimeout(function() {
         newTitle.removeClass('mask-down');
-        newTitleBg.removeClass('mask-up');
-        newBrain.removeClass('fadeout');
-        newBrain.removeClass('fadein');
-        newHomeBox.removeClass('fromright');
-        newHomeBox.removeClass('toleft');
-        newWork.removeClass('fadein-from-right');
-        newWork.removeClass('work-toleft');
-        newDesignBoxes.removeClass('boxes-out');
-//         newDesignBoxes.removeClass('boxes-in');
-				newAboutP.removeClass('fadeout');
-        newAboutP.removeClass('fadein');
-        newDevBG.removeClass('devbgfadeout');
-        newDevBG.removeClass('devbgfadein');
+        newTitleBg.removeClass('mask-up');               
       },800);
       
-        
+			TweenMax.from(newBrain, 2, {opacity:0});
+			TweenMax.from(newWork, 2, {opacity:0});
+			TweenMax.from(activeWork, 2, {opacity:0});
+      
       setTimeout(function() {
-         active.removeClass('active');
-         newSlide.addClass('active').removeClass('next');
-         TweenMax.set(active, {width:'100%'});
-         activeMainTitle.removeClass('mask-up');
-         activeTitleBg.removeClass('mask-down');
+        active.removeClass('active');
+        newSlide.addClass('active').removeClass('next');
+        TweenMax.set(active, {width:'100%'});
+        activeMainTitle.removeClass('mask-up');
+        activeTitleBg.removeClass('mask-down');
         activeImageCaption.removeClass('mask-up');
         nextImageCaption.removeClass('mask-down');
-        activeHomeBox.removeClass('fromright');
-        activeHomeBox.removeClass('toleft');
-//         activeWork.removeClass('work-toleft');
-				activeDesignBoxes.removeClass('boxes-in');
+				newHomeBox.removeClass('toleft');
+				newHomeBox.removeClass('fromright');
+				newBrain.removeClass('fadein');
+				newBrain.removeClass('fadeout'); 
 				activeDesignBoxes.removeClass('boxes-out');
-
+				activeDesignBoxes.removeClass('boxes-in');
+				activeAboutP.removeClass('fadein');
+				activeAboutP.removeClass('fadeout');
+				newWork.removeClass('fadein-from-right');
+				newWork.removeClass('work-toleft');
+				newDevBG.removeClass('devbgfadein');
       },1500)
   }
   
 }
-
 
 function debounce(func, wait, immediate) {
 	var timeout;
