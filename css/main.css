@@ -359,13 +359,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
   background-position: 0px -45px;
   background-repeat: no-repeat;
 }
-.slider-content .fake-bg.red {
-/*   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/karlie-kloss.png); */
-/*   background-color: #EE4654; */
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,ffcdd3+27,b88be0+55,5727f2+100 */
-}
+
 .slider-content .fake-bg.blue {
-	background-image: url('../img/devpg-bg2.jpg');
+	background-image: url('../img/devpg-bg2.png');
   background-color: #E6E6E6;
 }
 /*
@@ -374,8 +370,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 }
 */
 .slider-content .fake-bg.grey {
-  background-image: url('../img/mer-1.png');
-  background-color: #bcbcbc;
+  background-image: url('../img/mer-5.png');
+  background-color: #ada2b2;
 }
 .slider-content .image-mask {
   position: absolute;
