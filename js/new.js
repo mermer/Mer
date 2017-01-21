@@ -1,5 +1,5 @@
 function validateWD(){
-		var pass = prompt('Enter password to view content',' ');
+		var pass = prompt('Enter password to view content','');
 		if (!pass) {
 			window.location.href = 'index.html';
 		}
@@ -13,7 +13,7 @@ function validateWD(){
 }
 
 function validateDD(){
-		var pass = prompt('Enter password to view content',' ');
+		var pass = prompt('Enter password to view content','');
 		if (!pass) {
 			window.location.href = 'index.html';
 		}
